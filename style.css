@@ -1,118 +1,189 @@
-body {
+body{
     background :url(https://zupimages.net/up/21/12/itkh.png) ;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family : roboto, sans-serif;
     width : 100%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+}
+.container{
+    display : flex ;
+    width : 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.fixed{
+  position: -webkit-sticky;
+  position: sticky;
+  top : 10px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#linkbox{
+  width : 5%;
+  flex-direction: column;
+  text-align: center;
+  height : 350px;
+  background: whitesmoke;
+  padding : 10px;
+  border : solid 1px teal;
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 20px 0 0 0;
+  box-shadow: 0 0 8px 8px #c9c9c9;
+  z-index: 2;
+}
+.iconmenu{
+  width : 70%;
+}
+.iconmenum{
+  width : 10%;
+}
+.iconmenuf{
+  width : 4%;
+}
+.iconmenu:hover{
+  width : 70%;
+  background: #c5c5c5;
+}
+:target {
+  padding-top: 420px; 
+  margin-top: -420px; 
+}
+.photoCV{
+  flex-grow: 1;
+  height : 370px;
+  max-height: max-content;
+  background: whitesmoke;
+  margin-left: 10px;
+  border : solid 1px teal;
+  border-radius: 0 20px 0 0;
+  box-shadow: 0 0 8px 8px gray;
 }
 h1{
-    color : teal;
-}
-a{
-  color: teal;
-}
-  p{
-  color : white;
+  text-align: center;
+  text-shadow: 0 0 8px 8px gray;
 }
 h2{
-  color : white;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-em{
-  color : teal;
-  font-size: x-large;
-}
-div#top{
-    box-shadow : 4px 8px 4px #DBE3DE ;
-    font-size : large ;
-    min-width : 250px ;
-    flex-grow: 1;
-    text-align : justify ;
-    border-radius : 20px 20px 20px 20px ;
-    padding : 40px ;
-    background : linear-gradient( white, #93AC9D) ;
-    opacity : 0.9 ;
-}
-div#masterbox{
-    display : flex ;
-    width : 95% ;
-    min-width : 10%;
-    align-content: center;
-    flex-basis: content;
-    flex-wrap: wrap;
-}
-div#masterbox1{
-  display : flex ;
-  width : 95% ;
-  min-width : 10%;
-}
-div#link{
-    float : left ;
-    width : 5%;
-    min-width : 50px;
-}
-div#bottom{
-    background : linear-gradient( teal, #005544) ;
-    border : solid 3px #005544 ;
-    border-radius : 20px 20px 20px 20px ;
-    width : 70% ;
-    padding : 40px;
-    font-size : x-large ;
-    color : #DBE3DE;
-    box-shadow : 4px 8px 4px #DBE3DE ;
-}
-div#box{
-    border : solid 3px #005544;
-    border-radius : 20px 20px 20px 20px ;
-    margin : 10px ;
-    color : white ;
-    max-width: 52%;
-    min-width: 400px;
-    font-size : x-large ;
-    flex-grow: 1;
-    float : left ;
-    text-align : justify ;
-    padding : 30px;
-    background : linear-gradient( teal, #005544) ;
-    opacity : 0.9;
-    box-shadow : 4px 8px 4px #DBE3DE;
-}
-div#box2{
-    border : solid 3px #005544;
-    border-radius : 20px 20px 20px 20px ;
-    margin : 10px ;
-    max-width: 45%;
-    min-width: 400px;
-    text-align : justify ;
-    font-size : large ;
-    padding : 30px;
-    float : left ;
-    background : white;
-    hyphens: auto;
-    opacity : 0.9;
-    box-shadow : 4px 8px 4px #DBE3DE;
-}
-div#box3{
-  border : solid 3px #005544;
-  border-radius : 20px 20px 20px 20px ;
-  margin : 10px ;
-  max-width: 45%;
-  min-width: 400px;
-  font-size : xx-large ;
-  float : left ;
-  text-align: justify;
-  padding : 30px;
-  background : linear-gradient( white, #93AC9D);
-  hyphens: auto;
+.boxh{
+  width : 90%;
+  margin-top: 20px;
+  color: whitesmoke;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 8px 8px gray;
+  border : solid 1px whitesmoke;
   opacity : 0.9;
-  box-shadow : 4px 8px 4px #DBE3DE;
+  background: teal;
+}
+.boxm{
+  width : 90%;
+  margin-top: 20px;
+  color: whitesmoke;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 8px 8px gray;
+  border : solid 1px whitesmoke;
+  opacity : 0.9;
+  background: teal;
+  padding-top: 20px;
+}
+.boxwl{
+  width : 48%;
+  background : whitesmoke;
+  box-shadow: 0 0 8px 8px gray;
+  border : solid 1px teal;
+  opacity : 0.9;
+  padding : 20px 20px 10px 5px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 20px 0 0 20px;
+}
+.boxwr{
+  width : 45%;
+  background : whitesmoke;
+  box-shadow: 0 0 8px 8px gray;
+  border : solid 1px teal;
+  opacity : 0.9;
+  padding : 20px 20px 10px 5px;
+  text-align: center;
+  border-radius: 0 20px 20px 0;
+}
+.boxwl1{
+  background : whitesmoke;
+  width : 30%;
+  box-shadow: 0 0 8px 8px gray;
+  border : solid 1px teal;
+  opacity : 0.9;
+  padding : 30px;
+  text-align: left;
+  border-radius: 20px 0 0 20px;
+}
+.boxwm2{
+  background : whitesmoke;
+  box-shadow: 0 0 8px 8px gray;
+  width : 30%;
+  border : solid 1px teal;
+  margin-right: 10px;
+  margin-left: 10px;
+  opacity : 0.9;
+  padding : 30px;
+  text-align: center;
+}
+.boxwr3{
+  background : whitesmoke;
+  box-shadow: 0 0 8px 8px gray;
+  border : solid 1px teal;
+  opacity : 0.9;
+  width : 30%;
+  padding : 30px;
+  text-align: center;
+  border-radius: 0 20px 20px 0;
+}
+.intitule{
+  width: 80%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+}
+.intitule2{
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+}
+.textteal{
+  color : teal;
+}
+.textwhite{
+  color: whitesmoke;
+}
+.textbold{
+  font-weight: bolder;
+}
+.textitalic{
+  font-style: italic;
 }
 ul{ 
-	list-style: none; 
+	list-style: none;
+  text-align: justify;
 }
 ul li::before {
 	content: "↪";
-  font-size: xx-large;
 	display: inline-block;  
 	width: 1em; 
 	margin-left: -1em;
@@ -123,10 +194,20 @@ ul li li::before {
 	width: 1em; 
 	margin-left: 2em;
 }
+li{
+  margin : 10px;
+}
+li li{
+  margin : 5px;
+}
+li li:last-child{
+  margin-bottom: 20px;
+}
 div#gall{
-    width : 80% ;
+    width : 90% ;
     display : flex;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 .gallery-image {
     padding: 20px;
@@ -134,26 +215,23 @@ div#gall{
     flex-wrap: wrap;
     justify-content: center;
   }
-  
   .gallery-image img {
     height: 350px;
     width: 350px;
     transform: scale(1.0);
     transition: transform 0.4s ease;
   }
-  
   .img-box {
     box-sizing: content-box;
     margin: 10px;
     height: 350px;
     width: 350px;
-    overflow: hidden;
+    overflow : hidden;
     display: inline-block;
     color: white;
     position: relative;
     background-color: white;
   }
-  
   .caption {
     position: absolute;
     bottom: 5px;
@@ -161,7 +239,9 @@ div#gall{
     opacity: 0.0;
     transition:transform 0.3s ease, opacity 0.3s ease;
   }
-  
+  .caption a{
+    color : white;
+  }
   .transparent-box {
     height: 350px;
     width: 350px;
@@ -171,11 +251,9 @@ div#gall{
     left: 0;  
     transition: background-color 0.3s ease;
   }
-  
   .img-box:hover img { 
     transform: scale(1.1);
   }
-  
   .img-box:hover .transparent-box {
     background-color:rgba(0, 0, 0, 0.5);
   }
@@ -184,16 +262,64 @@ div#gall{
     transform: translateY(-20px);
     opacity: 1.0;
   }
-  
   .img-box:hover {
     cursor: pointer;
-  }
-  
+  } 
   .caption > p:nth-child(2) {
     font-size: 0.8em;
   }
-  
   .opacity-low {
-    opacity: 0.5;
+    opacity : 0.5;
   }
+  .boutonmenuprincipal {
+    color: teal;
+    border: none;
+    background: none;
+    cursor: pointer;
+    }
+    .boutonmenuprincipal:hover {
+    background-color: #c9c9c9;
+    text-align: center;
+    }
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-child {
+    display: none;
+    background: rgb(0, 66, 66);
+    border-radius: 10px ;
+    }
+    .dropdown-child a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown-child a:hover {
+    background : #c5c5c5;
+    }
+    .dropdown:hover .dropdown-child {
+    display: block;
+    position : absolute;
+    z-index: 3;
+    }
+    p{
+      width: 90% ;
+      text-align: justify;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h3{
+      color : teal;
+      text-align: center;
+    }
+    .bgw{
+      background : whitesmoke;
+      opacity : 0.9;
+    }
+    a{
+      color: teal;
+    }
+@media screen AND (max-width : 640px){
+  
 }
